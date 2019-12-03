@@ -72,7 +72,7 @@ class HomeIndex extends React.Component {
                         <p>Let's talk!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="https://formspree.io/mledlwgl">
+                                <form method="POST" action="https://formspree.io/mledlwgl">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
