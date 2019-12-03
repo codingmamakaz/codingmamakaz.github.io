@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/codingmamakaz.github.io",
   siteMetadata: {
     title: "Gatsby Starter - Strata by HTML5 UP",
     author: "Hunter Chang",
