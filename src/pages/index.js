@@ -12,12 +12,17 @@ import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
+import proj01 from '../assets/images/thumbs/project1.png'
+import proj02 from '../assets/images/thumbs/project2.png'
+import proj03 from '../assets/images/thumbs/project3.png'
+
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
+
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
@@ -26,6 +31,12 @@ const DEFAULT_IMAGES = [
     { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
     { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
     { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' }
+];
+
+const PROJECT_IMAGES = [
+    { id: '1', source: proj01, thumbnail: proj01, caption: 'Project 1', description: 'React/Rails' },
+    { id: '2', source: proj02, thumbnail: proj02, caption: 'Project 2', description: 'Rails' },
+    { id: '3', source: proj03, thumbnail: proj03, caption: 'Project 3', description: 'Sinatra' }
 ];
 
 class HomeIndex extends React.Component {
@@ -57,7 +68,7 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Projects</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
+                        <Gallery images={PROJECT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
                             source,
                             thumbnail,
                             caption,
