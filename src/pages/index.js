@@ -28,7 +28,7 @@ const PROJECT_IMAGES = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Kazumi Karbowski"
         const siteDescription = "Site description"
 
         return (
@@ -42,7 +42,7 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>I have an inquiring mind that leads me to continuously learn new techniques and technologies. </h2>
+                            <h2>My inquisitive mind leads me to continuously learn new techniques and technologies. </h2>
                         </header>
                         <p>Given my previous experience in the hospitality industry, I have a well-developed eye for detail and exceptional skills in time management, communication, and leadership.
                             I'm fluent in Japanese. <br />Programming languages: Ruby, Ruby on Rails, JavaScript, React and SQL.</p>
@@ -72,23 +72,25 @@ class HomeIndex extends React.Component {
                         <p>Let's talk!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="POST" action="https://formspree.io/mledlwgl">
+                                <form method="POST" action="https://formspree.io/mvogqwla">
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+                                        <div className="6u 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" required /></div>
                                         <div className="6u 12u$(xsmall)"><input type="text" name="_gotcha" style={{ display: 'none' }} /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
                                     </div>
+
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                    </ul>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        Pittsburgh, PA, U.S.A.
+                                        Pittsburgh, PA<br />
+                                        United States
                                     </li>
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
@@ -96,7 +98,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">kazumikarbowski@gmail.com</a>
+                                        <p>kazumikarbowski@gmail.com</p>
                                     </li>
                                 </ul>
                             </div>
