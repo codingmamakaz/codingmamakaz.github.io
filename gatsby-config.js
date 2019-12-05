@@ -1,8 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: "Kazumi Karbowski",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    author: "Kazumi Karbowski",
+    description: "Portfolio and blog",
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/Codingmamakaz`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/codingmamakaz`,
+      },
+    ],
   },
   plugins: [
     {
@@ -10,6 +20,21 @@ module.exports = {
       options: {
         name: `blogs`,
         path: `${__dirname}/src/blogs`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        /*
+        - basePath defaults to `/`
+        - contentPath defaults to `content/posts`
+        - assetPath defaults to `content/assets`
+        - mdx defaults to `true`
+        */
+        basePath: `/blog`,
+        contentPath: `src/blogs`,
+        // assetPath: `src/assets`,
+        mdx: false,
       },
     },
     `gatsby-transformer-remark`,
