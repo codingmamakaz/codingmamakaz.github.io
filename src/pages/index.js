@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
+// import BlogPage from './blog'
 import proj01 from '../assets/images/thumbs/project1.png'
 import proj02 from '../assets/images/thumbs/project2.png'
 import proj03 from '../assets/images/thumbs/project3.png'
@@ -65,6 +66,11 @@ class HomeIndex extends React.Component {
                         <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
                         </ul> */}
+
+                        {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} /> */}
+                        <h1>Hi people</h1>
+
+
                     </section>
 
                     <section id="three">
