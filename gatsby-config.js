@@ -15,13 +15,13 @@ module.exports = {
     ],
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/src/blogs`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `blogs`,
+    //     path: `${__dirname}/src/blogs`,
+    //   },
+    // },
     {
       resolve: `gatsby-theme-blog`,
       options: {
@@ -32,9 +32,10 @@ module.exports = {
         - mdx defaults to `true`
         */
         basePath: `/blog`,
-        contentPath: `src/blogs`,
+        // contentPath: `content/posts`,
+
         // assetPath: `src/assets`,
-        mdx: false,
+        // mdx: false,
       },
     },
     `gatsby-transformer-remark`,
