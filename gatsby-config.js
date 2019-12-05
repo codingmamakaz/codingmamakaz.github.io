@@ -5,6 +5,14 @@ module.exports = {
     description: "A Gatsby.js Starter based on Strata by HTML5 UP"
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
