@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Kazumi Karbowski",
+    title: "Kazumi Karbowski's personal site",
     author: "Kazumi Karbowski",
     description: "Portfolio and blog",
     social: [
