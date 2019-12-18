@@ -53,6 +53,7 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Projects</h2>
+                        {/* doing this to until I figure out what I like the best for the UI */}
 
                         <Gallery images={PROJECT_IMAGES.map(({ id, source, thumbnail, caption, url, description }) => ({
                             source,
@@ -61,10 +62,10 @@ class HomeIndex extends React.Component {
                             url,
                             description
                         }))} />
-                        {/* 
-                        <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul> */}
+                    </section>
+
+                    <section id="blog">
+                        <h2>Blogs</h2>
                     </section>
 
                     <section id="three">
