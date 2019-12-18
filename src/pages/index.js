@@ -2,12 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import proj01 from '../assets/images/thumbs/project1.png'
 import proj02 from '../assets/images/thumbs/project2.png'
 import proj03 from '../assets/images/thumbs/project3.png'
+import { Link } from 'gatsby'
 
 
 const PROJECT_IMAGES = [
@@ -53,7 +53,6 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Projects</h2>
-                        {/* doing this to until I figure out what I like the best for the UI */}
 
                         <Gallery images={PROJECT_IMAGES.map(({ id, source, thumbnail, caption, url, description }) => ({
                             source,
@@ -63,9 +62,9 @@ class HomeIndex extends React.Component {
                             description
                         }))} />
                     </section>
-
+                    {/* doing this to until I figure out what I like the best for the UI */}
                     <section id="blog">
-                        <h2>Blogs</h2>
+                        <h2><Link to="/blog/" activeStyle={{ color: "red" }}>Blog</Link></h2>
                     </section>
 
                     <section id="three">

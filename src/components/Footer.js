@@ -6,8 +6,6 @@ class Footer extends React.Component {
             <div id="footer">
                 <div className="inner">
                     <ul className="icons">
-                        {/* doing this to until I figure out what I like the best for the UI */}
-                        <li><a href="https://twitter.com/Codingmamakaz" target="_blank" className="icon fa-pencil"><span className="label">Blog</span></a></li>
                         <li><a href="https://twitter.com/Codingmamakaz" target="_blank" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
                         <li><a href="https://github.com/codingmamakaz" target="_blank" className="icon fa-github"><span className="label">Github</span></a></li>
                         <li><a href="https://www.linkedin.com/in/kazumi-karbowski/" target="_blank" className="icon fa-linkedin-square"><span className="label">Email</span></a></li>
